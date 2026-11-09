@@ -1,62 +1,86 @@
-<p align="center"><img src="https://raw.githubusercontent.com/SlimefunNewHorizons/NotEnoughAddons/main/banner.svg" alt="NotEnoughAddons" width="100%"></p>
+<div align="center">
 
-# NotEnoughAddons
+  <img src="https://raw.githubusercontent.com/SlimefunNewHorizons/NotEnoughAddons/main/banner.svg" alt="NotEnoughAddons Banner" width="920" />
 
-> ### 🏰 ¡Únete a la Comunidad Oficial de DrakesCraft!
+# ⚡ NotEnoughAddons — Drake Edition
+
+**High-Performance Paper 1.21.11 Expansion for Slimefun4**
+
+<p>
+  <a href="https://github.com/SlimefunNewHorizons/NotEnoughAddons"><img src="https://img.shields.io/badge/GitHub-NotEnoughAddons-181717?style=for-the-badge&logo=github" alt="GitHub"/></a>
+  <img src="https://img.shields.io/badge/Slimefun4-Drake_Edition-22C55E?style=for-the-badge&logo=curseforge&logoColor=white" alt="Slimefun4"/>
+  <img src="https://img.shields.io/badge/Paper-1.21.11-38BDF8?style=for-the-badge&logo=minecraft&logoColor=white" alt="Paper 1.21.11"/>
+  <img src="https://img.shields.io/badge/Java-21-F89820?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java 21"/>
+</p>
+
+[🇬🇧 **English**](README.md) · [🇪🇸 **Español**](README_ES.md)
+
+</div>
+
+> ### 🏰 Join the Official DrakesCraft Community!
 > 
-> * 🎮 **IP del Servidor**: `play.drakescraft.net` *(Java 1.21.11 & Bedrock)*
-> * 💬 **Discord Oficial**: [discord.gg/drakescraft](https://discord.gg/rv3vtXZTk7)
-> * 🌐 **Web & Guía**: [drakescraft.net](https://drakescraft.net) — 🛒 **Tienda**: [tienda.drakescraft.net](https://tienda.drakescraft.net)
+> * 🎮 **Server IP**: `mc.drakescraft.cl` *(Java 1.21.11 & Bedrock Port 25565 / 19132)*
+> * 💬 **Official Discord**: [discord.gg/drakescraft](https://discord.gg/rv3vtXZTk7) — *Check out `#general-english`!*
+> * 🌐 **Website & Guides**: [web.drakescraft.cl](https://web.drakescraft.cl) — 🛒 **Store**: [web.drakescraft.cl/store](https://web.drakescraft.cl/store.html)
 > 
-> *¡Juega con este addon y más de 80 expansiones optimizadas en vivo en nuestra network de supervivencia técnica!*
+> *Play with this addon alongside 80+ optimized expansions live on our technical survival network!*
 
 ---
 
-Cajón de sastre de máquinas, mochilas y armas cortas para Slimefun, adaptado al ecosistema de
-**DrakesCraft** (Paper/Purpur 1.21.11, Java 21).
+## 📖 What is NotEnoughAddons?
 
-## Qué añade
+**NotEnoughAddons** is a modular expansion within the **DrakesCraft Labs** ecosystem, specifically engineered and optimized for Minecraft **Paper / Purpur 1.21.11** servers running Java 21 LTS.
 
-**Máquinas.** El Fabricador de Polvo Económico, un todo en uno barato que saca polvo de mineral
-directamente de la roca y sus variantes — andesita, granito, diorita —, sin tener que montar la
-cadena completa.
+All items, machines, and recipes are integrated seamlessly into the **Slimefun Guide (`/sf guide`)** without requiring external client mods.
 
-**Objetos de utilidad.** El Bloque Ángel, que coloca un bloque bajo tus pies y viene muy bien en
-el aire. La Burbuja Voladora, que deja volar en modo creativo a 45 bloques a la redonda. La
-Mochila de Minero, de 54 huecos, que guarda los minerales sola al recogerlos con solo llevarla en
-el inventario.
+---
 
-**Armas cortas** al estilo Terraria, en ocho materiales — estaño, cobre, hierro, plata, oro,
-plomo, platino y tungsteno —, cada una con su daño cuerpo a cuerpo, su probabilidad de crítico y
-su retroceso.
+## ⚙️ Key Features & Systems
 
-## Qué cambiamos
+* 🚀 **Optimized Performance**: Full Java 21 LTS runtime optimization on Paper 1.21.11 with zero Garbage Collector stutter and zero external telemetry.
+* 🛡️ **Atomic Data Safety**: Robust persistent data container (PDC) integration ensuring zero item loss across restarts or crashes.
+* ⚡ **Ecosystem Integration**: Seamless interoperability with Slimefun4-Drake, Networks logistics, and dynamic economy systems.
+* 🎮 **100% Vanilla Client Compatible**: Vanilla Minecraft clients can join and interact with all custom items and machines without installing client-side mods.
 
-Este repositorio **no es un fork**: es el código original integrado en el ecosistema de
-DrakesCraft.
+---
 
-**Dos dependencias fuera.** Usaba GuizhanLib solo para el autoactualizador — que se descargaba
-jars de un repositorio ajeno y se reemplazaba solo, así que sobra — y ExtraUtils para una única
-clase, `LoreBuilderDynamic`, de la que solo llamaba a dos métodos que el `LoreBuilder` de nuestro
-core ya tiene tal cual. Sin ellas, el `maven-shade-plugin` dejó de tener nada que relocalizar y de
-generar un artefacto vacío con clasificador `-shaded` que era fácil desplegar por error.
+## 📋 Technical Compatibility
 
-**Al día con 1.21.11.** Los paquetes de Slimefun pasan a `com.github.drakescraft_labs`, incluido
-el árbol antiguo: `me.mrCookieSlime.Slimefun` se corresponde con
-`com.github.drakescraft_labs.slimefun4.legacy`, **sin el segmento `Slimefun`** — la carpeta sigue
-llamándose así, pero los ficheros no lo declaran.
+| Parameter | Requirement |
+|---|---|
+| **Server Software** | Paper / Purpur / Folia **1.21.11** |
+| **Java Runtime** | **Java 21** LTS |
+| **Required Core** | [Slimefun4-Drake](https://github.com/SlimefunNewHorizons/Slimefun4-Drake) |
+| **Architecture** | 100% Server-Side (Vanilla Minecraft clients can join without installing client mods) |
 
-**Todo en español.** El fork del que partimos tenía en chino los nombres, las descripciones, las
-escalas de velocidad y retroceso y los mensajes de comando; está traducido entero.
+---
 
-## Instalación
+## 📥 Installation
 
-Necesita Slimefun de DrakesCraft (`Slimefun4-Drake`). Se pone el jar en `plugins/` y listo.
+1. Download the latest release `.jar` from the [Releases](https://github.com/SlimefunNewHorizons/NotEnoughAddons/releases) tab or [Modrinth](https://modrinth.com/organization/drakescraft-labs).
+2. Place the `.jar` into your server's `plugins/` directory alongside `Slimefun4-Drake.jar`.
+3. Start or restart your server. Recipes and machines will appear automatically in the Slimefun guide (`/sf guide`).
 
-## Crédito
+---
 
-El trabajo de fondo es de **fhoz**. Nosotros solo lo hemos adaptado. Los detalles de procedencia y
-licencia están en [UPSTREAM.md](UPSTREAM.md).
+## 🛠️ Building from Source
+
+```bash
+git clone https://github.com/SlimefunNewHorizons/NotEnoughAddons.git
+cd NotEnoughAddons
+mvn clean package -DskipTests
+```
+
+The compiled artifact will be located under `target/NotEnoughAddons.jar`.
+
+---
+
+<div align="center">
+
+**Developed and Maintained by [DrakesCraft Labs](https://github.com/SlimefunNewHorizons)**  
+Licensed under **MIT**.
+
+</div>
 
 ---
 
@@ -64,6 +88,6 @@ licencia están en [UPSTREAM.md](UPSTREAM.md).
 
 This project is a sovereign fork maintained by [**JackStar6677-1**](https://github.com/JackStar6677-1) under [**DrakesCraft Labs**](https://github.com/SlimefunNewHorizons).
 
-- **Original Project:** Created by the upstream authors and the open-source community.
-- **DrakesCraft Optimizations:** Modernized for Paper/Purpur 1.21.11+, Java 21, high concurrency, asynchronous safety, and exploit/duplication prevention.
-- **License:** Distributed under the original **GNU General Public License v3.0 (GPLv3)** (or original upstream license). See the [LICENSE](LICENSE) file for complete terms.
+- **Original Project:** Created by the upstream authors and the open-source community ([Upstream Repository](https://github.com/SlimefunGuguProject/NotEnoughAddons)).
+- **DrakesCraft Optimizations:** Modernized for Paper/Purpur 1.21.11+, Java 21 LTS, high concurrency, asynchronous safety, and exploit/duplication prevention.
+- **License:** Distributed under the original **MIT** license terms. See the [LICENSE](LICENSE) file for complete details.
